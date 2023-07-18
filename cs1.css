@@ -1,0 +1,155 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing:border-box;
+    
+}
+
+html,body{
+    
+    width: 100%;
+    height: 100%;
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+     
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+
+
+}
+
+
+.rnav{
+    display: flex;
+    align-items: center;
+   
+
+}
+
+
+.rnav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.rnav i{
+    color: royalblue;
+
+}
+
+.left .textcenter{
+    position: absolute;
+    top: 33%;
+    left:20%;
+    right: 20%;
+    transform: translate(-33,-20);
+   
+
+}.textcenter h1{
+    font-size: 90px;
+}
+
+.textcenter p{
+    color: gray;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.textcenter a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black ;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600 ;
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: blueviolet ;
+    
+
+}
+
+.righttop{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+
+}
+
+.rightbottom {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1621054143165-33e0e77558d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80);
+    background-size: cover;
+    background-position:center;
+
+
+}
+
+.rt1{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=948&q=80);
+    background-size: cover;
+    background-position: center;
+   
+
+
+
+}
+.rt2{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fG9yYW5nZSUyMGZydWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+/* to make web site responsive use below code  */
+
+@media(max-width: 500px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .main .left{
+        width: 100%;
+
+    }
+
+    .main .right{
+        width :100%;
+    }
+    
+}
+
